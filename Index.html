@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <centre><h1>Spell Checker</h1></centre> 
+    <style>
+
+    /*.d1{
+        background-color: rgb(4, 106, 238);
+        text-align: center;
+    }*/
+    .invalid-word{
+        background-color: red;
+    }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <form >
+        <input type="file"  onchange="readFile(this)" >
+        <button type="button"  id="sendrequest"  onclick="upload()">Check</button>
+      </form>
+    <br>
+    <div class="d1" id='container' contenteditable="true"></div>
+    <div  id="custommenu" >
+        <ul></ul>
+    </div>
+
+</body>
+</html> 
+ 
